@@ -22,11 +22,7 @@ Open the files.
 
 # ℹ About the Shelter Management System
 
-The Shelter Management System aims to assist the employees of a shelter to keep track of the adoption process and maintain the required records. This system has a set of interfaces and classes to manage pets’ adoption. The system issues a unique ID to the pet added to the shelter and as the shelter accepts only cats and dogs, the system also divides cat and dog identification 
-
-As the shelter accomodates cats and dogs only, the system 
-
-can accommodate two types of pets: cats and dogs. The system should issue unique IDs to the pets, keeping a customer record for adopters, maintaining a record for the pets added to the shelter and another record for associating the customers with the pets they have adopted. In addition, certain restrictions for the adoption process were adapted by the system.
+The Shelter Management System aims to assist the employees of a shelter to keep track of the adoption process and maintain the required records. This system has a set of interfaces and classes to manage pets’ adoption. The system issues a unique ID to the pet added to the shelter and as the shelter accepts only cats and dogs, the system also divides cat and dog IDs by their own groups for easier management. The system maintains a record on the pets as well as another record for associating the customers with the pets they have adopted. Finally, certain restrictions prevalent in the adoption process were adapted to the system.
 
 # 🔖 Achievements
 
