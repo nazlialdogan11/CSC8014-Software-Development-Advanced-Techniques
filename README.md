@@ -26,7 +26,7 @@ The Shelter Management System aims to assist the employees of a shelter to keep 
 
 # 🔖 Achievements
 
-***Upon completion of this system, successfully demonstrated the following achievements:***
+***Upon completing this system, successfully demonstrated the following achievements:***
 - created an abstract class that implements the Pet Interface.
 - avoided code duplication with a constructor in the abstract class.
 - included a factory method within the abstract class.
@@ -90,11 +90,39 @@ After executing the code, the system displays a menu for user interaction (Figur
 # ❇️ Future Improvements
 
 ***The following remarks were made by Dr R Yassin Kassab for future improvements.***
-- The factory method inside the Abstract class is good. No need to pass getAdopted or careInstructions (getAdopted is false by default and careInstructions is specific to either a Cat or a Dog).
+- The factory method inside the Abstract class is good. No need to pass getAdopted or careInstructions(getAdopted is false by default and careInstructions is specific to either a Cat or a Dog).
 - Good, the Abstract class has the right set of attributes. Better for getAdopted not to be final as this will change.
-- It would be better to override the toString method in the Abstract class to avoid code duplication in the Cat and Dog classes.
+- Better to override the toString method in the Abstract class to avoid code duplication in the Cat and Dog classes.
 - Add a method to change the adoption status of the pet.
-
+- Better to override toString method for both the Cat and Dog classes.
+- Ensure validity check for all constructor's parameters concerning Name class.
+- Consider overriding the equals and hashCode methods for Name class.
+- Utilise static factory methods to ensure uniqueness in the CustomerNumber class(provide a private constructor for this class as well as a public static factory method to be used to create unique objects).
+- Better to create a map to store CustomerNumber to ensure uniqueness.
+- Better to override toString for the CustomerNumber class.
+- Set CustomerNumber properly by using "this.customerNumber = firstComponent + "." + secondComponent;".
+- Have attributes as final for the CustomerRecord class.
+- Make dob and doi of type Date instead of Calendar.
+- Use defensive copying in the constructor to create new objects of Date in the CustomerRecord class.
+- Use defensive copying in the getter methods of date of birth and date of issue to create new objects of Date in the CustomerRecord class.
+- Override the toString method in the CustomerRecord class.
+- Use the getInstance method from the AbstractPet class instead of using the Cat and Dog constructors explicitly for the ShelterManager class.
+- Validate the petType to see if it is either a cat or a dog.
+- Pass dob to the constructor when creating the customer record via addCustomerRecord method.
+- Validate input parameters for the ShelterManager class.
+- Ensure that a customer with the same name and dob is not added twice by carrying out a proper check.
+- Ensure the proper implementation of the getAvailablePetsByType and isCustomerEligibleForDog methods(Ensure customers ithout a garden are unable to adopt a dog regardless of their age).
+- Set adoption status to True once a pet is adopted.
+- Take training status into consideration when checking the customer age.
+- Calculate custome age by using "Calendar dob = Calendar.getInstance(); dob.setTime(customerRecord.getDob().getTime());".
+-  Print the reason why a customer cannot adopt a pet.
+-  Better to use at least two packages to group related classes with each other(base classes and main classes).
+-  Include a header comment at the beginning of each class with author and Date information.
+-  Provide a class description at the beginning of each class.
+-  Use the Assertions class instead of the Asset command for testing classes.
+-  Ensure checking 3 classes.
+-  Provide more normal test cases(especially for the ShelterManager test), boundary test cases(for instance, adopting a cat by under 18) and Exception test cases.
+  
   # ⛓️ References
 
 - [*Detailed information on the CSC8014 module.*](https://www.ncl.ac.uk/module-catalogue/module.php?code=CSC8014)
