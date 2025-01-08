@@ -5,7 +5,10 @@
 This project aims to deliver a management system for a shelter providing temporary homes for stray or unwanted pet animals which can later be adopted.
 
 >___Feedback:___
-> `"Good use of constants in abstract class for cat and dog.
+> `"Good, an abstract class that implements the Pet Interface has been created.
+>Good, the Abstract class has  a constructor to avoid code duplication.
+>Correct implementation of the methods provided in the interface.
+>Good use of constants in abstract class for cat and dog.
 > Good use of equalsIgnoreCase() for checking if the type is a cat or a dog.
 > Good use of private helper functions."`
 > -*Dr R Yassin Kassab, Module Leader*
@@ -47,7 +50,10 @@ After executing the code, the system displays a menu for user interaction (Figur
 # ❇️ Future Improvements
 
 ***The following remarks were made by Dr R Yassin Kassab for future improvements.***
-- 
+- The factory method inside the Abstract class is good. No need to pass getAdopted or careInstructions (getAdopted is false by default and careInstructions is specific to either a Cat or a Dog).
+- Good, the Abstract class has the right set of attributes. Better for getAdopted not to be final as this will change.
+- It would be better to override the toString method in the Abstract class to avoid code duplication in the Cat and Dog classes.
+- Add a method to change the adoption status of the pet.
 
   # ⛓️ References
 
